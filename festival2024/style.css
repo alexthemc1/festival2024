@@ -110,6 +110,9 @@
   color: black;
   font-weight: bold;
 }
+.navbar .nav ul li:hover a {
+  color: white;
+}
 .navbar .social-media {
   position: absolute;
   right: 5%;
@@ -125,6 +128,9 @@
 }
 .navbar .social-media i {
   color: black;
+}
+.navbar .social-media a:hover i {
+  color: white;
 }
 
 nav#slidingMenu {
@@ -945,6 +951,9 @@ footer .footer .footer-note {
   color: black;
   font-weight: bold;
 }
+.navbar .nav ul li:hover a {
+  color: white;
+}
 .navbar .social-media {
   position: absolute;
   right: 5%;
@@ -960,6 +969,9 @@ footer .footer .footer-note {
 }
 .navbar .social-media i {
   color: black;
+}
+.navbar .social-media a:hover i {
+  color: white;
 }
 
 nav#slidingMenu {
@@ -1970,6 +1982,10 @@ div#dimanche .nom, div#dimanche .horaire {
 .activite .container .card_gauche .titre {
   grid-area: 1/1/2/2;
 }
+.activite .container .card_gauche .titre h2 {
+  padding-block: 10px;
+  line-height: 25px;
+}
 .activite .container .card_gauche .image_activite {
   grid-area: 2/1/3/2;
 }
@@ -1985,13 +2001,16 @@ div#dimanche .nom, div#dimanche .horaire {
 .activite .container .card_droite .titre {
   grid-area: 1/2/2/2;
 }
+.activite .container .card_droite .titre h2 {
+  padding-block: 10px;
+  line-height: 25px;
+}
 .activite .container .card_droite .image_activite {
   grid-area: 2/2/3/3;
 }
 .activite .container .card_droite .texte_activite {
   grid-area: 2/1/3/2;
 }
-
 .activite .container .card1 .titre, .activite .container .card2 .titre, .activite .container .card3 .titre {
   width: 100%;
   height: 50px;

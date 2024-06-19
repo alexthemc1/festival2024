@@ -13,26 +13,37 @@
      <!-- icones windows -->
      <link rel="icon" type="image/png" href="images/icons/icon-16x16.png" sizes="16x16"> 
      <link rel="icon" type="image/png" href="images/icons/icon-32x32.png" sizes="32x32"> 
+     <link rel="icon" type="image/png" href="images/icons/icon-96x96.png" sizes="96x96"> 
+     <link rel="icon" type="image/png" href="images/icons/icon-128x128.png" sizes="128x128"> 
+     <link rel="icon" type="image/png" href="images/icons/icon-192x192.png" sizes="192x192"> 
      <!-- icone racourcie safari -->
      <link rel="mask-icon" href="images/icons/icon-16x16.png" color="#ffffff">
      <!-- icones apple -->
+     <link rel="apple-touch-icon" sizes="16x16" href="images/icons/icon-16x16.png"> 
+     <link rel="apple-touch-icon" sizes="32x32" href="images/icons/icon-32x32.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/icon-72x72.png"> 
+     <link rel="apple-touch-icon" sizes="96x96" href="images/icons/icon-96x96.png">
      <link rel="apple-touch-icon" sizes="128x128" href="images/icons/icon-128x128.png"> 
-     <link rel="apple-touch-icon" sizes="192x192" href="images/icons/icon-192x192.png">
- 
+     <link rel="apple-touch-icon" sizes="144x144" href="images/icons/icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="images/icons/icon-152x152.png"> 
+     <meta name="application-name" content="sillyjazz">
      <!-- open-graph -->
      <meta property="og:title" content="SillyJazz festival">
      <meta property="og:type" content="website">
      <meta property="og:image" content="http://alexandre-boutry.be/images/logo.png">
-     <meta property="og:image:width" content="1650"> <meta property="og:image:height" content="484">
+     <meta property="og:image:width" content="1650">
+     <meta property="og:image:height" content="484">
      <meta property="og:url" content="http://alexandre-boutry.be/"> 
      <meta property="og:description" content="Rejoignez le Festival de Jazz Évasion 2024 à Silly pour trois jours de musique envoûtante, d'activités interactives et de gastronomie savoureuse dans un cadre accueillant et inclusif.">
+     <meta property="og:locale" content="fr_FR">
+     <meta property="og:site_name" content="SillyJazz">
      <!-- open-graph fa-x-twitter -->
      <meta name="twitter:card" content="summary">
-     <meta name="twitter:site" content="http://alexandre-boutry.be/">
+     <meta name="twitter:site" content="@sillyjazz">
      <meta name="twitter:title" content="SillyJazz">
      <meta name="twitter:description" content="Rejoignez le Festival de Jazz Évasion 2024 à Silly pour trois jours de musique envoûtante, d'activités interactives et de gastronomie savoureuse dans un cadre accueillant et inclusif.">
-     <meta name="twitter:image" content="http://alexandre-boutry.be/images/icons/icon-128x128_background.svg">
-     
+     <meta name="twitter:image" content="images/icons/icon-128x128_background.svg">
+     <link rel="canonical" href="http://alexandre-boutry.be/">
 </head>
 <body>
     <header> 
@@ -166,7 +177,6 @@
                     </ul> 
                 </div>
             </div>
-
             <div class="tarif jour1">
                 <div class="tarif_titre">
                     <h2>Vendredi (28)</h2>
@@ -240,7 +250,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="tarif jour2">
                 <div class="tarif_titre">
                     <h2>Samedi (29)</h2>
@@ -316,7 +325,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="tarif jour3">
                 <div class="tarif_titre">
                     <h2>Dimanche (30)</h2>
@@ -392,7 +400,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="paiement">
                 <button class="bouton"><h2>étape suivante</h2></button>
             </div>
@@ -467,7 +474,7 @@ fermernav.addEventListener("click", function() {
     });
 });
 </script>
-
+<!-- script du bouton containe -->
 <script>
     function compteur_visible(button) { 
     const parent = button.closest('.bouton_container');

@@ -74,6 +74,9 @@
                     font-weight: bold;
                 }
             }
+            li:hover a{
+                color: white;
+            }
         }
     }
     .social-media {
@@ -87,6 +90,9 @@
         gap: 20%;
         a{height: 55px;}
         i{color: black;}
+        a:hover i{
+            color: white;
+        }
     }
 }
 
