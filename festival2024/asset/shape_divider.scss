@@ -1,0 +1,41 @@
+.shape-divider-bottom1 {
+    position: relative;
+    bottom: -1px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.shape-divider-bottom2 {
+    display:block;
+    position: relative;
+    top:-69px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.shape-divider-bottom3 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-bottom1 svg ,.shape-divider-bottom2 svg ,.shape-divider-bottom3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+.shape-divider-bottom1 .shape-fill {
+    fill:white;
+}
+.shape-divider-bottom2 .shape-fill {
+    fill:$color3;
+}
+.shape-divider-bottom3 .shape-fill {
+    fill:$color1;
+}

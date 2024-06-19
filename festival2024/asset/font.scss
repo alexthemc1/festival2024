@@ -1,0 +1,49 @@
+
+
+    @font-face {
+    font-family: 'Lemonada Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lemonada Regular'), url('font/Lemonada-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Lemonada Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lemonada Light'), url('font/Lemonada-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Lemonada SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lemonada SemiBold'), url('font/Lemonada-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Lemonada Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lemonada Bold'), url('font/Lemonada-Bold.woff') format('woff');
+    }
+   
+    @font-face {
+        font-family: "Roboto_Regular";
+        src: url(font/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: "Roboto_Bold";
+        src: url(font/Roboto-Bold.ttf);
+    }
+
+
+    $font_reg:Lemonada Regular;
+    $font_light:Lemonada Light;
+    $font_semi:Lemonada SemiBold;
+    $font_bold:Lemonada Bold;
+    $font_Roboto_reg:"Roboto_Regular";
+    $font_Roboto_bold:"Roboto_Bold";

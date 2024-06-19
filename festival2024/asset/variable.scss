@@ -1,0 +1,12 @@
+$color1:#FFB6FF;
+$color2:#8093F1;
+$color3:#0CC8BA;
+$color4:#FDB600;
+
+$color1_bis:#DC91DC;
+$color2_bis:#6575C4;
+$color3_bis:#72CAC3;
+$color4_bis:#FFD874;
+
+$linear1 : linear-gradient(to bottom, $color1,$color2);
+$linear2 : linear-gradient(to bottom, $color3,$color1);

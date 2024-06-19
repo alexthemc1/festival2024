@@ -1,0 +1,255 @@
+
+.ticket{
+    position: relative;
+    width: 1140px;
+    height: auto;
+    left:50%;
+    transform: translate(-50%,0);
+    background-color: white;
+    padding-bottom: 15vh;
+    .ticket_container{
+        padding: 20px;
+        font-family: $font_bold;
+        .description{
+            padding-block: 20px;
+            width: 100%;
+            height: auto;
+            text-align: left;
+            h2{
+                font-size: 24px;
+                text-transform: uppercase;
+                padding-bottom: 25px;
+            }
+            p{
+                font-family: $font_reg;
+                font-size: 18px;
+                span{
+                    font-family: $font_semi;
+                }
+            }
+        }
+        .tarif{
+            padding-block: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .tarif_titre{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                h2{
+                    font-size: 24px;
+                    padding-left: 20px;
+                    color:white;
+                    line-height: 30px;
+
+                }
+            }
+            .tarif_container{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-rows: 1fr;
+                padding-block: 25px;
+                .text1{
+                    text-align: left;
+                    width: 40%;
+                    padding-left: 20px;
+                }
+                .text2{
+                    text-align: right;
+                    width: 40%;
+                    padding-right: 30px;
+                }
+                .text1,.text2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 96%;
+                    grid-area: 1 / 1 / 1 / 9;
+                    p{
+                        font-family: $font_reg;
+                        font-size: 14px;
+                    }
+                }
+                .bouton_container {          
+                    display: flex;
+                  
+                    right: 20px;
+                    height: 80px;
+                    width: 156px;
+                    grid-area: 1 / 9 / 1 / 9;
+                    .bouton_panier {
+                        width: 100%;
+                        .bouton_ajout{
+                            width: 100%;
+                            border: none;
+                            cursor: pointer;
+                            height: 100%;
+                            background-color: white;
+                            font-family: $font_semi;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: white;
+                        }
+                    }     
+                    .bouton_compteur {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 100%;
+                        border-style: solid;
+                        border-width: 2px;
+                        background-color: white;
+                        font-family: $font_semi;
+                        color:black;
+                        .ajouter, .retirer {
+                            border: none;
+                            padding: 0px 17px;
+                            height: 100%;
+                            background-color: white;
+                            font-size: 20px;
+                            font-family: $font_semi;
+                            color:black;
+                        }
+                        .compteur {
+                            font-size: 20px;
+                            width: 15px;
+                            flex: auto;
+                            text-align: center;
+                        }
+                        .ajouter{
+                            border-left: solid black 2px;
+                        }
+                        .retirer{
+                            border-right: solid black 2px;
+                        }
+                    }
+                }     
+            }
+            .tarif_description{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: left;
+                font-size: 18px;
+                h2{
+                    font-family: $font_bold;
+                }
+                ul {
+                    padding-left: 25px;
+                    li p{
+                      font-family: $font_reg;
+                    }
+                }
+            }
+        }
+        .paiement{
+            padding-block: 40px;
+            display: flex;
+            justify-content: right;
+            .bouton {
+                position: relative;
+                height: 80px;
+                width: 300px;
+                font-size: 25px;
+                font-family: $font_semi;
+                color: white;
+                background-color: $color4_bis;
+                border: none;
+                z-index: 1;
+                transition: transform 0.2s, box-shadow 0.2s;
+                font-weight: bold;
+                h2{
+                    font-family: Lemonada SemiBold;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .bouton::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0;
+                right: 0;
+                bottom: 15px;
+                background-color: $color4;
+                z-index: -1;
+                transition: all 0.2s;
+            }
+            .bouton:hover {
+                transform: translateY(-3px);
+            }             
+            .bouton:hover::before {
+                bottom: 5px;
+            }
+          
+        }
+        .trio{
+            .tarif_titre ,.tarif_container .bouton_container .bouton_panier .bouton_ajout{
+                background-color: $color4;
+            }
+        } 
+        .jour1{
+            .tarif_titre ,.tarif_container .bouton_container .bouton_panier .bouton_ajout{
+                background-color: $color3;
+            }
+        }
+        .jour2{
+            .tarif_titre ,.tarif_container .bouton_container .bouton_panier .bouton_ajout{
+                background-color: $color2;
+            }
+        }
+        .jour3{
+            .tarif_titre ,.tarif_container .bouton_container .bouton_panier .bouton_ajout{
+                background-color: $color1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .ticket{
+        width: 90%;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .ticket {
+        width: 100%;
+        .ticket_container{
+            padding: 20px;
+            .tarif {
+                .tarif_titre{
+                    justify-content: center;
+                }
+                .tarif_container{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(9, 1fr);
+                    grid-template-rows: 1fr 1fr;
+                .text1,.text2{
+                    grid-area: 1 / 1 / 1 / 10;
+                    width: 100%;
+                    padding: 0px;
+                }
+        
+                .bouton_container{
+                    grid-area: 2 / 5 / 2 / 6;
+                    padding-top: 25px;
+                }
+                }
+                }
+                .paiement{
+                    justify-content: center;
+                }
+        } 
+    }
+}

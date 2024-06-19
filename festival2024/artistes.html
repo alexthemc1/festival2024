@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="SillyJazz"> 
+    <meta name="description" content="Rejoignez le Festival de Jazz Évasion 2024 à Silly pour trois jours de musique envoûtante, d'activités interactives et de gastronomie savoureuse dans un cadre accueillant et inclusif.">
+    <link rel="stylesheet" href="style.css">
+    <title>Artistes</title>
+     <!-- lien font-awasome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="manifest" href="manifest.json">
+     <!-- icones windows -->
+     <link rel="icon" type="image/png" href="images/icons/icon-16x16.png" sizes="16x16"> 
+     <link rel="icon" type="image/png" href="images/icons/icon-32x32.png" sizes="32x32"> 
+     <!-- icone racourcie safari -->
+     <link rel="mask-icon" href="images/icons/icon-16x16.png" color="#ffffff">
+     <!-- icones apple -->
+     <link rel="apple-touch-icon" sizes="128x128" href="images/icons/icon-128x128.png"> 
+     <link rel="apple-touch-icon" sizes="192x192" href="images/icons/icon-192x192.png">
+ 
+     <!-- open-graph -->
+     <meta property="og:title" content="SillyJazz festival">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="http://alexandre-boutry.be/images/logo.png">
+     <meta property="og:image:width" content="1650"> <meta property="og:image:height" content="484">
+     <meta property="og:url" content="http://alexandre-boutry.be/"> 
+     <meta property="og:description" content="Rejoignez le Festival de Jazz Évasion 2024 à Silly pour trois jours de musique envoûtante, d'activités interactives et de gastronomie savoureuse dans un cadre accueillant et inclusif.">
+     <!-- open-graph fa-x-twitter -->
+     <meta name="twitter:card" content="summary">
+     <meta name="twitter:site" content="http://alexandre-boutry.be/">
+     <meta name="twitter:title" content="SillyJazz">
+     <meta name="twitter:description" content="Rejoignez le Festival de Jazz Évasion 2024 à Silly pour trois jours de musique envoûtante, d'activités interactives et de gastronomie savoureuse dans un cadre accueillant et inclusif.">
+     <meta name="twitter:image" content="http://alexandre-boutry.be/images/icons/icon-128x128_background.svg">
+     
+</head>
+<body>
+    <header> 
+        <button id="ouvrirnav" class="menu-btn">&#9776;</button>
+        <!-- premier navbar (visible jusqu'à 1200px sauf logo) -->
+        <nav class="navbar">
+            <a href="index.html" id="logo">
+                <div class="logo-container">
+                    <img src="images/logo.svg" alt="Silly Jazz Logo" class="logo">
+                    <span class="edition"><h2>Edition<br>2024</h2></span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="activite.html">Activités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-spotify"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </nav>
+        <!-- deuxième navbar (caché -100vh au dessus de l'écran) -->
+        <nav id="slidingMenu" class="menu-hidden">
+            <button id="fermernav" class="menu-btn">&times;</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="activite.html">Activités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-spotify"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </nav>
+    </header>
+    <h1>Nos artistes</h1>
+    <div class="artiste">
+        <a href="artistes_detail.html">
+            <div class="card" id="vendredi">
+                <div class="nom">Trio Mélodie</div>
+                <img src="images/artistes/artiste1.png" alt="Trio Mélodie">
+                <div class="horaire">Vendredi : 19h00 > 20h00</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="vendredi">
+                <div class="nom">Swing All Stars</div>
+                <img src="images/artistes/artiste2.png" alt="Swing All Stars">
+                <div class="horaire">Vendredi : 20h30 > 22h00</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="vendredi">
+                <div class="nom">ElectroJazz Band</div>
+                <img src="images/artistes/artiste3.png" alt="ElectroJazz Band">
+                <div class="horaire">Vendredi : 22h30 > 00h00</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="samedi">
+                <div class="nom">Sophie et ses Jazzmen</div>
+                <img src="images/artistes/artiste4.png" alt="Sophie et ses Jazzmen">
+                <div class="horaire">Samedi : 12h00 > 13h30</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="samedi">
+                <div class="nom">Eva & Paul</div>
+                <img src="images/artistes/artiste5.png" alt="Eva & Paul">
+                <div class="horaire">Samedi : 16h00 > 17h30</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="samedi">
+                <div class="nom">Big Band Extravaganza</div>
+                <img src="images/artistes/artiste6.png" alt="Big Band Extravaganza">
+                <div class="horaire">Samedi : 18h00 > 19h30</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="samedi">
+                <div class="nom">Nouveaux Talents Jazz</div>
+                <img src="images/artistes/artiste7.png" alt="Nouveaux Talents Jazz">
+                <div class="horaire">Samedi : 20h00 > 21h30</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="dimanche">
+                <div class="nom">Smooth Sax Quartet</div>
+                <img src="images/artistes/artiste8.png" alt="Smooth Sax Quartet">
+                <div class="horaire">Dimanche : 11h00 > 12h30</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="dimanche">
+                <div class="nom">Blue Note Quintet</div>
+                <img src="images/artistes/artiste9.png" alt="Blue Note Quintet">
+                <div class="horaire">Dimanche : 15h00 > 16h30</div>
+            </div>
+        </a>
+    
+        <a href="artistes_detail.html">
+            <div class="card" id="dimanche">
+                <div class="nom">The Jazz Masters</div>
+                <img src="images/artistes/artiste10.png" alt="The Jazz Masters">
+                <div class="horaire">Samedi : 17h00 > 18h30</div>
+            </div>
+        </a>
+    </div>   
+    <footer>
+        <div class="shape-divider-bottom3">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer">
+            <div class="espace_footer"></div>
+            <div class="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="activite.html">Activités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Réseaux</h3>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-spotify"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><span>Adresse :</span><br>PL. COMMUNALE 18, 7830 SILLY</p>
+                <p><span>Tel :</span> 32 2 123 45 67</p>
+                <p><span>Email :</span> contact@sillyjazz.com</p>
+            </div>
+            <div class="sponsor">
+                <h3>Sponsors</h3>
+                <div class="sponsors">
+                    <a href="https://www.kbcbrussels.be/particuliers/fr.html?zone=topnav"><img src="images/partenaires/mutualite.png" alt="partenaire Mutualité chétienne"></a>
+                    <a href="https://www.proximus.be/fr"><img src="images/partenaires/proximus.png" alt="partenaire Proximus"></a>
+                    <a href="https://www.omervanderghinste.be/fr"><img src="images/partenaires/omer.png" alt="partenaire OMER Bière traditionnelle"></a>
+                    <a href="https://www.cm.be/nl/welkom-bij-cm"><img src="images/partenaires/kbc.png" alt="partenaire KBC Bruxelles"></a>                 
+                </div>
+            </div>
+            <div class="espace_footer"></div>
+            <div class="footer-note">
+                <p>Ce site fictif a été réalisé dans le cadre d’un exercice scolaire</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+const ouvrirnav = document.getElementById("ouvrirnav");
+const fermernav = document.getElementById("fermernav");
+const slidingMenu = document.getElementById("slidingMenu");
+
+ouvrirnav.addEventListener("click", function() {
+    slidingMenu.classList.add("menu-visible");
+    slidingMenu.classList.remove("menu-hidden");
+});
+
+fermernav.addEventListener("click", function() {
+    slidingMenu.classList.remove("menu-visible");
+    slidingMenu.classList.add("menu-hidden");
+    });
+});
+</script>

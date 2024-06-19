@@ -1,0 +1,73 @@
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    .footer {
+        position:absolute;
+        background-color: $color1;
+        color: black;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: start;
+        h3 {
+            font-size: 35px;
+            font-family: Lemonada bold;
+        }
+        .menu {
+            grid-column: span 1;
+        }
+        .menu ul , .contact p{
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-family: Lemonada SemiBold;
+        }
+        .menu ul li a, .contact span {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .social, .contact {
+            grid-column: span 2;
+        }
+        .social, .sponsor {
+            text-align: center;
+        }   
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 40px;
+            gap: 7%;   
+            a{height: 50px;}
+            i{color: black;}
+        }
+        .sponsors {
+            display: grid;
+            grid-column: span 1;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+            justify-content: center;
+            width: 0px;
+            position: relative;
+            left: 50%;
+        }
+        .sponsors img {
+            height: 50px;
+        }
+        .footer-note {
+            grid-column: span 8;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-family: Lemonada SemiBold;
+        }
+    }
+}
