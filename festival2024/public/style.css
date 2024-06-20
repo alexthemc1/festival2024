@@ -57,6 +57,39 @@
   height: 70px;
   z-index: 99;
 }
+.navbar #logo {
+  z-index: 101;
+}
+.navbar #logo .logo-container {
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.navbar #logo .logo-container .logo {
+  height: 100%;
+  z-index: 3;
+}
+.navbar #logo .logo-container .edition {
+  background-color: #8093F1;
+  padding: 5px 10px;
+  margin-left: 0px;
+  border-radius: 5px;
+  height: 80%;
+  position: relative;
+  left: -10px;
+  width: 110px;
+  z-index: 2;
+}
+.navbar #logo .logo-container .edition h2 {
+  color: #fff;
+  position: absolute;
+  right: 14px;
+  top: 4px;
+  line-height: 21px;
+  font-size: 22px;
+  text-align: center;
+}
 .navbar .nav {
   position: absolute;
   left: 50%;
@@ -115,7 +148,7 @@ nav#slidingMenu {
 }
 nav#slidingMenu .nav {
   position: relative;
-  top: 5%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, 0);
   height: 70%;
@@ -138,7 +171,8 @@ nav#slidingMenu .nav ul li a {
 nav#slidingMenu .social-media {
   position: absolute;
   width: 200px;
-  bottom: 10%;
+  height: 10%;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -172,37 +206,6 @@ nav#slidingMenu .menu-btn {
   max-height: 100vh;
 }
 
-#logo .logo-container {
-  z-index: 1001;
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-#logo .logo-container .logo {
-  height: 100%;
-  z-index: 3;
-}
-#logo .logo-container .edition {
-  background-color: #8093F1;
-  padding: 5px 10px;
-  margin-left: 0px;
-  border-radius: 5px;
-  height: 80%;
-  position: relative;
-  left: -10px;
-  width: 110px;
-  z-index: 2;
-}
-#logo .logo-container .edition h2 {
-  color: #fff;
-  position: absolute;
-  right: 14px;
-  top: 4px;
-  line-height: 21px;
-  font-size: 22px;
-  text-align: center;
-}
-
 @media (max-width: 1200px) {
   header .navbar .nav ul, header .navbar .social-media {
     display: none;
@@ -212,12 +215,7 @@ nav#slidingMenu .menu-btn {
     padding: 10px 10px;
     width: 300px;
   }
-  header nav#slidingMenu #logo {
-    position: relative;
-    left: 20px;
-    top: 20px;
-  }
-  header .menu-btn {
+  .menu-btn {
     display: block;
   }
 }
